@@ -47,8 +47,8 @@ function App() {
           return (
             <li key={todo.id} style={{ textDecoration: todo.status ? 'line-through' : ''}}>
               {todo.value}
-              <button onClick={() => deleteTodo(todo.id)}>❌</button>
-              <button onClick={() => doneTodo(todo.id)}>✔️</button>
+              <button className='btn' onClick={() => deleteTodo(todo.id)}>❌</button>
+              <button className='btn' onClick={() => doneTodo(todo.id)}>✔️</button>
             </li>
           )
         })}
